@@ -10052,6 +10052,11 @@ h3 {
   grid-row: 4;
 }
 
+.clientes {
+  grid-column: 1/4;
+  grid-row: 2;
+}
+
 .menu {
   background: linear-gradient(to bottom, #79c3f329 0%, #79c3f3c7 100%);
   width: 100%;
