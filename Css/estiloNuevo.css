@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.pagina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.hijoHeader {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.hijoVideo {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.hijoParrafo {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+.hijoFooter {
+  grid-column: 1 / 4;
+  grid-row: 4;
+}
+.menu {
+	background: linear-gradient(to bottom, #79c3f329 0%, #79c3f3c7 100%);
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	/*font-size: 15px;*/
+	display: flex;
+	/*height: 50px;*/
+	flex-direction: row;
+}
+
+.menu img {
+	width: 4rem;
+}
+
+.footerPadre {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 0;
+}
+.footerPadre .footerHijo1 {
+	width: 33%;
+}
+.footerPadre .footerHijo2 {
+	width: 33%;
+}
+.footerPadre .footerHijo3 {
+	width: 33%;
+}
+.wsp a img{
+	position: fixed;
+	width: 40px;
+	bottom: 3rem;
+	right: 0;
+}
+
+.wsp a img:hover {
+	width: 50px;
+}
+
+ul {
+	list-style: none;
+}
+
+ol li {
+	color: grey;
+	list-style: none;
+}
+
+body {
+	background-color: #f4fbff;
+	font-family: "Oswald";
+}
+
+h2 {
+	color: white;
+}
+
+h3 {
+	color: #79c3f3;
+	/*font-size: 12px;*/
+}
+
+footer {
+	color: block;
+	background: linear-gradient(to bottom, #79c3f3c7 0%, #79c3f329 100%);
+	text-align: center;
+}
+
+div video {
+	/*padding: 0 33% ;*/
+	width: 50%;
+	}
+
+div a input {
+	/*margin: 20px 0 20px 0;*/
+	width: 200px;
+	height: 50px;
+	background-color: #a1daff;
+	border: none;
+	/*font-size: 12px;*/
+	font-family: "Oswald";
+	margin:	3% 0 3% 0;
+	/*margin-left: 33%;*/
+	border-radius: 15px;
+}
+div a input:hover {
+	background-color: #a1daff99;
+	width: 225px;
+	/*font-size: 14px;*/
+}
+@media (min-width: 900px) {
+	.menu a {
+		font-size: 25px;
+	}
+	.menu a:hover {
+		background: linear-gradient(to bottom, #79c3f314 0%, #79c3f375 100%);
+	}
+	
+	.menu .menuHijo1 {
+		width: 25%;
+	}
+	/*
+	.menu .menuHijo1 a {
+		font-size: 25px;
+		text-decoration: none;
+		color: black;
+		display: block;
+		text-align: center;
+		padding: 25px 0;
+	}*/
+	.menu img {
+		width: 100px;
+	}
+	.wsp a img{
+		position: fixed;
+		width: 80px;
+		bottom: 3rem;
+		right: 0;
+	}
+
+	.wsp a img:hover {
+		width: 100px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	div a input {
+		width: 200px;
+		height: 50px;
+		background-color: #a1daff;
+		border: none;
+		font-size: 20px;
+		font-family: "Oswald";
+		margin:	3% 0 3% 0;
+		border-radius: 15px;
+	}
+	div a input:hover {
+	background-color: #a1daff99;
+	width: 225px;
+	font-size: 25px;
+}
+#navbarSupportedContent2{
+	display:none;
+}
+
+}

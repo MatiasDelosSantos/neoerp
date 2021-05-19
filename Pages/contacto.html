@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8>
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<title>Neo Erp - Contacto</title>
+	<link rel="stylesheet" type="text/css" href="../dist/estilos.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light menu">    
+		  <a class="navbar-brand" href="../index.html"><img src="../Media/neo.png" alt="Imagen Neo"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+				<a class="nav-link" href="clientes.html">Clientes</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="proveedores.html">Proveedores</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="admin.html">Admin</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="contacto.html">Contacto</a>
+			  </li>
+			</ul>
+		  </div>
+		</nav>
+	</header>
+	<!-- Formulario de Contacto realizado con Tabla, Luego se quitará la tabla y se posicionará todo de mejor manera -->
+	<form action="contacto.html" method="GET" class="form">
+		<div>
+			<h3 class="espacioTopBottom textoCentro">CONTACTO</h3>
+		</div>
+		<div class="form__group">
+			<label for="campo_nombre" class="form__label"> Nombre </label>
+			<input type="text" name="campo_nombre" placeholder="Ingrese Nombre..." class="form__field">
+		</div>
+		<div class="form__group">
+			<label for="campo_email" class="form__label"> Email </label>
+			<input type="email" name="campo_email" placeholder="Ingrese Email..." class="form__field">
+		</div>
+		<div class="form__group">
+			<label for="campo_tipdoc" class="form__label"> Tip. Documento </label>
+			<select>
+				<option value="1">DNI</option>
+				<option value="2">CUIL</option>
+				<option value="3">CUIT</option>
+			</select>
+		</div>
+		<div class="form__group">
+			<label for="campo_documento" class="form__label"> Documento </label>
+			<input type="text" name="campo_documento" placeholder="Ingrese Documento..." class="form__field">	
+		</div>
+		<div class="form__group">
+			<label for="campo_termcon" class="form__label"> Term. y Cond. </label>
+			<input type="checkbox" name="campo_termcon" class="form__field form__field--checkbox">
+		</div>
+		<div class="form__group">
+			<label for="campo_area" class="form__label">Observaciones</label>
+			<textarea name="campo_area" class="form__field form__field--textarea"></textarea>
+		</div>
+		<div class="form__actions">
+			<input type="reset" name="resetear" value="Limpiar" class="button">
+			<input type="submit" name="Enviar" value="Enviar" class="button button--primary">
+		</div>
+	</form>
+	<div class="espacioTopBottom"></div>
+	<footer>
+		<div>
+			<h2>INFORMACIÓN DE LA EMPRESA</h2>
+			<ul>
+			    <li>Neo Erp</li>
+			    <li>Av. Sarmiento 5283, Caba</li>
+			    <li>Info@neoerp.com</li>
+			</ul>
+		</div>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+@import "bootstrap";
+@import "variables";
+@import "Components/form.scss";
+@import "Components/buttons.scss";
+@import url('https://fonts.googleapis.com/css?family=Oswald:300');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.pagina {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.hijoHeader {
+  grid-column: 1 / 4;
+  grid-row: 1;
+}
+.hijoVideo {
+  grid-column: 2/3;
+  grid-row: 2;
+}
+.hijoParrafo {
+  grid-column: 2;
+  grid-row: 3;
+  text-align: center;
+}
+.hijoFooter {
+  grid-column: 1 / 4;
+  grid-row: 4;
+}
+.menu {
+	background: linear-gradient(to bottom, #79c3f329 0%, #79c3f3c7 100%);
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+	display: flex;
+	flex-direction: row;
+	img {
+		width: 4rem;
+	}
+}
+.footerPadre {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 10px;
+	padding-bottom: 0;
+	.footerHijo1 {
+		width: 33%;
+	}
+	.footerHijo2 {
+		width: 33%;
+	}
+	.footerHijo3 {
+		width: 33%;
+	}
+}
+
+.wsp {
+	a {
+		img{
+			position: fixed;
+			width: 40px;
+			bottom: 3rem;
+			right: 0;
+		}
+	}
+}
+
+ul {
+	list-style: none;
+}
+
+ol {
+	li {
+		color: grey;
+		list-style: none;
+	}
+}
+
+body {
+	background-color: $backgroundColorBlanco;
+	font-family: "Oswald";
+}
+
+h2 {
+	color: white;
+}
+
+h3 {
+	color: #79c3f3;
+}
+
+footer {
+	color: block;
+	background: linear-gradient(to bottom, #79c3f3c7 0%, #79c3f329 100%);
+	text-align: center;
+}
+div {
+	a {
+		text-decoration: none;
+	}
+
+	video {
+		width: 50%;
+	}
+}
+
+@media (min-width: 900px) {
+	.menu {
+		a {
+			font-size: 25px;
+		}
+	}
+	.menu {
+		a:hover {
+			background: linear-gradient(to bottom, #79c3f314 0%, #79c3f375 100%);
+		}
+	}
+	
+	.menu {
+		.menuHijo1 {
+			width: 25%;
+		}
+		img {
+			width: 100px;
+		}
+	}
+	.wsp {
+		a img{
+			position: fixed;
+			width: 80px;
+			bottom: 3rem;
+			right: 0;
+		}
+		a img:hover {
+			width: 100px;
+		}
+	}
+	h3 {
+		font-size: 30px;
+	}
+	#navbarSupportedContent2{
+		display:none;
+	}
+
+}
