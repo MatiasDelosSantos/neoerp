@@ -9973,8 +9973,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  padding: 100px 0;
 }
 .form__group {
   padding: 10px;
@@ -10052,11 +10050,6 @@ h3 {
   grid-row: 4;
 }
 
-.clientes {
-  grid-column: 1/4;
-  grid-row: 2;
-}
-
 .menu {
   background: linear-gradient(to bottom, #79c3f329 0%, #79c3f3c7 100%);
   width: 100%;
@@ -10064,6 +10057,8 @@ h3 {
   z-index: 100;
   display: flex;
   flex-direction: row;
+  padding: 0;
+  margin: 0;
 }
 .menu img {
   width: 4rem;
@@ -10111,7 +10106,7 @@ h2 {
   color: white;
 }
 
-h3 {
+h1 {
   color: #79c3f3;
 }
 
@@ -10134,7 +10129,8 @@ div video {
   }
 
   .menu a:hover {
-    background: linear-gradient(to bottom, #79c3f314 0%, #79c3f375 100%);
+    /*border-bottom-color: #79c3f375;*/
+    border-bottom: 2px solid #004675;
   }
 
   .menu .menuHijo1 {

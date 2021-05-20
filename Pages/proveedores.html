@@ -4,37 +4,88 @@
 	<meta charset=utf-8>
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title>Neo Erp - Proveedores</title>
-	<link rel="stylesheet" type="text/css" href="../css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="../dist/estilos.css">
 </head>
 <body>
-	<header>
-		<!-- Barra de Menú con Ícono -->
-		<div id="menu">
-			<a href="../index.html"><img src="../Media/neo.jpg" alt="Imagen Neo"></a>
-	        <div><a href="clientes.html">CLIENTES</a></div>
-	        <div><a href="proveedores.html">PROVEEDORES</a></div>
-	    	<div><a href="admin.html">ADMIN</a></div>
-	    	<div><a href="../index.html">ERP</a></div>
-			<div><a href="contacto.html">CONTACTO</a></div>
+	<div class="pagina">
+		<header class="hijoHeader">
+			<nav class="navbar navbar-expand-lg navbar-light menu">    
+			  <a class="navbar-brand" href="../index.html"><img src="../Media/neo.png" alt="Imagen Neo"></a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ml-auto">
+				  <li class="nav-item">
+					<a class="nav-link" href="clientes.html">Clientes</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="proveedores.html">Proveedores</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="admin.html">Admin</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contacto.html">Contacto</a>
+				  </li>
+				</ul>
+			  </div>
+			</nav>
+		</header>
+		<div class="hijoVideo">
+			<h1 class="center">PROVEEDORES - ALTA DE PROVEEDORES</h1>
 		</div>
-	</header>
-	<div class="textoCentro espacioArriba">
-		<h3 class="espacioTopBottom">PROVEEDORES</h3>
-	</div>
-	<div class="imagenMantenimiento">
-	</div>
-	<div class="textoCentro espacioTopBottom">
-		<p>WEB EN MANTENIMIENTO</p>
-	</div>
-	<footer>
-		<div>
-			<h2>INFORMACIÓN DE LA EMPRESA</h2>
-			<ul>
-			    <li>Neo Erp</li>
-			    <li>Av. Sarmiento 5283, Caba</li>
-			    <li>Info@neoerp.com</li>
-			</ul>
+		<div class="hijoParrafo">
+			<form action="contacto.html" method="GET" class="form">
+				<div class="form__group">
+					<label for="campo_nombre" class="form__label"> Código </label>
+					<input type="text" name="campo_nombre" placeholder="Ingrese Nombre..." class="form__field">
+				</div>
+				<div class="form__group">
+					<label for="campo_nombre" class="form__label"> Nombre </label>
+					<input type="text" name="campo_nombre" placeholder="Ingrese Nombre..." class="form__field">
+				</div>
+				<div class="form__group">
+					<label for="campo_email" class="form__label"> Email </label>
+					<input type="email" name="campo_email" placeholder="Ingrese Email..." class="form__field">
+				</div>
+				<div class="form__group">
+					<label for="campo_tipdoc" class="form__label"> Tip. Documento </label>
+					<select>
+						<option value="1">DNI</option>
+						<option value="2">CUIL</option>
+						<option value="3">CUIT</option>
+					</select>
+				</div>
+				<div class="form__group">
+					<label for="campo_documento" class="form__label"> Documento </label>
+					<input type="text" name="campo_documento" placeholder="Ingrese Documento..." class="form__field">	
+				</div>
+				<div class="form__group">
+					<label for="campo_area" class="form__label">Observaciones</label>
+					<textarea name="campo_area" class="form__field form__field--textarea"></textarea>
+				</div>
+				<div class="form__actions">
+					<input type="reset" name="resetear" value="Limpiar" class="button">
+					<input type="submit" name="Enviar" value="Enviar" class="button button--primary">
+				</div>
 		</div>
-	</footer>	
+		<footer class="hijoFooter">
+			<div class="footerPadre">
+				<div class="footerHijo1"><a href="https://www.google.com.ar/maps/place/Av.+Sarmiento+5283,+Buenos+Aires/@-34.5678449,-58.4061318,15.75z/data=!4m5!3m4!1s0x95bcb56c18baf053:0x26567754a1c69fdf!8m2!3d-34.5680222!4d-58.4016032"><img src="../Media/ubicacion.jpg"></a></div>
+				<div class="footerHijo2">
+					<h2>INFORMACIÓN DE LA EMPRESA</h2>
+					<ul>
+						<li>Neo Erp</li>
+						<li>Av. Sarmiento 5283, Caba</li>
+						<li>Info@neoerp.com</li>
+					</ul>
+				</div>
+				<div class="footerHijo3"></div>
+			</div>
+		</footer>	
+	</div>
+	<script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
