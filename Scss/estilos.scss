@@ -1,12 +1,13 @@
 @import "bootstrap";
-@import "variables";
-@import "Components/form.scss";
+@import "components/variables";
+@import "components/form.scss";
 @import "Components/buttons.scss";
 @import url('https://fonts.googleapis.com/css?family=Oswald:300');
 
 * {
 	margin: 0;
 	padding: 0;
+	box-sizing: border-box;
 }
 
 .pagina {
@@ -14,25 +15,64 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
   grid-auto-rows: minmax(100px, auto);
-}
-.hijoHeader {
-  grid-column: 1 / 4;
-  grid-row: 1;
-}
-.hijoVideo {
-  grid-column: 2/3;
-  grid-row: 2;
-}
-.hijoParrafo {
-  grid-column: 2;
-  grid-row: 3;
-  text-align: center;
-}
-.hijoFooter {
-  grid-column: 1 / 4;
-  grid-row: 4;
-}
 
+  .hijoHeader {
+	grid-column: 1 / 4;
+	grid-row: 1;
+	}
+
+	.hijoVideo {
+	grid-column: 1 / 4;
+	grid-row: 2;
+	}
+
+	.hijoH1 {
+		grid-column: 1/4;
+		grid-row: 3;
+		width: 100%;
+		text-align: center;
+		background-color: #79c3f3;
+		margin: 0;
+		padding: 20px 0 0 0;
+	}
+	.hijoParrafo {
+		background-color: #dcf2ff;
+
+		.hijoParrafo1 {
+			grid-column: 1;
+			grid-row: 4;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.hijoParrafo2 {
+			grid-column: 1 / 3;
+			grid-row: 4;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.hijoParrafo3 {
+			grid-column: 2/4;
+			grid-row: 4;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		.hijoParrafo4 {
+			grid-column: 4;
+			grid-row: 4;
+			text-align: center;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
+	
+	.hijoFooter {
+	grid-column: 1 / 4;
+	grid-row: 5;
+	}
+}
 .menu {
 	background: linear-gradient(to bottom, #79c3f329 0%, #79c3f3c7 100%);
 	width: 100%;
@@ -42,6 +82,7 @@
 	flex-direction: row;
 	padding: 0;
 	margin: 0;
+
 	img {
 		width: 4rem;
 	}
@@ -52,6 +93,7 @@
 	justify-content: space-between;
 	padding: 10px;
 	padding-bottom: 0;
+
 	.footerHijo1 {
 		width: 33%;
 	}
@@ -67,7 +109,8 @@
 	a {
 		img{
 			position: fixed;
-			width: 40px;
+			/*width: 40px;*/
+			display: block;
 			bottom: 3rem;
 			right: 0;
 		}
@@ -95,7 +138,7 @@ h2 {
 }
 
 h1 {
-	color: #79c3f3;
+	color: white;
 }
 
 footer {
